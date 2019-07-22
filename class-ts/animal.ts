@@ -9,3 +9,7 @@ class Dog extends Animal {
         console.log(`Woof! Woof!`)
     }
 }
+
+const dog = new Dog()
+dog.bark()
+dog.move(10)

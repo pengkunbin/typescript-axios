@@ -6,7 +6,9 @@
 - 造轮子的过程
 - web的基本知识，例如XMLHttpRequest()
 - 单元测试
+
 #过程记录
+
 **知识来源**：
 构建思路来自[基于TypeScript从零重构axios](https://coding.imooc.com/class/330.html)，有能力请支持正版。
 

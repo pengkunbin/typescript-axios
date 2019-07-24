@@ -1,5 +1,10 @@
 import { isDate, isObject } from './util'
 
+/**
+ * parsing special characters
+ * @param string
+ * @return {string}
+ */
 function encode(val: string): string {
     return encodeURIComponent(val)
         .replace(/%40/g, '@')
@@ -10,6 +15,12 @@ function encode(val: string): string {
         .replace(/%5D/ig, ']')
 }
 
+/**
+ * Add params to the url
+ * @param string 
+ * @param any
+ * @return {string} 
+ */
 export function buildURL(url: string, params?: any): string {
     if (!params) {
         return url

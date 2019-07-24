@@ -2,7 +2,7 @@ import { isDate, isObject } from './util'
 
 /**
  * parsing special characters
- * @param string
+ * @param val
  * @return {string}
  */
 function encode(val: string): string {
@@ -17,8 +17,8 @@ function encode(val: string): string {
 
 /**
  * Add params to the url
- * @param string 
- * @param any
+ * @param url
+ * @param params
  * @return {string} 
  */
 export function buildURL(url: string, params?: any): string {

@@ -13,7 +13,7 @@ function axios(config: AxiosRequestConfig): void {
 
 /**
  * Pretreatment of axios
- * @param AxiosRequestConfig
+ * @param config
  */
 function processConfig(config: AxiosRequestConfig): void {
     config.url = transformURL(config)
@@ -21,7 +21,7 @@ function processConfig(config: AxiosRequestConfig): void {
 
 /** 
  * analysis params
- * @param AxiosRequestConfig
+ * @param config
  * @return {string} 
 */
 function transformURL(config: AxiosRequestConfig): string {

@@ -33,3 +33,28 @@ export function processHeaders(headers: any, data: any): any {
     }
     return headers
 }
+
+/**
+ * Parse the header string returned by the getAllResponseHeaders method into an object structure
+ * @param headers 
+ * @return {object}
+ */
+export function parseHeaders(headers: string): object {
+    let parsed = Object.create(null)
+    if (!headers) {
+        return parsed
+    }
+
+    headers.split('\r\n').forEach(line => {
+        let [key, val] = line.split(':')
+        key = key.trim().toLowerCase()
+        if (!key) {
+            return
+        }
+        if (val) {
+            val = val.trim()
+        }
+        parsed[key] = val
+    })
+    return parsed
+}

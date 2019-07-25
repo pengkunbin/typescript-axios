@@ -63,22 +63,22 @@ axios({
   }
 })
 
-// // post demo
-// axios({
-//   method: 'post',
-//   url: '/base/post',
-//   data: {
-//     foo: 'bar',
-//     baz: 2
-//   }
-// })
+// post demo
+axios({
+  method: 'post',
+  url: '/base/post',
+  data: {
+    foo: 'bar',
+    baz: 2
+  }
+})
 
-// const arr = new Int32Array([21, 31])
-// axios({
-//   method: 'post',
-//   url: '/base/buffer',
-//   data: arr
-// })
+const arr = new Int32Array([21, 31])
+axios({
+  method: 'post',
+  url: '/base/buffer',
+  data: arr
+})
 
 // // precess request headers post demo
 

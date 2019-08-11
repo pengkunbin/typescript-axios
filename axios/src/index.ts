@@ -1,5 +1,5 @@
 import { AxiosRequestConfig, AxiosPromise, AxiosResponse } from './types/index'
-import xhr from './xhr';
+import xhr from './core/xhr';
 import { buildURL } from './helper/url';
 import { transformRequest, transformResponse } from './helper/data'
 import { processHeaders } from './helper/header';
